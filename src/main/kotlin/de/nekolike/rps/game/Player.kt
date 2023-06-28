@@ -1,5 +1,6 @@
 package de.nekolike.rps.game
 
+import de.nekolike.rps.game.Judge.determineWinnerAndAddResultsToPlayers
 import de.nekolike.rps.model.Action
 import de.nekolike.rps.model.Strategy
 
@@ -12,7 +13,7 @@ class Player(val strategy: Strategy) {
 
     fun playAgainst(opponent: Player) {
         action = chooseAction()
-        // TODO: actual gameplay and determination of winner
+        determineWinnerAndAddResultsToPlayers(this, opponent)
     }
 
     private fun chooseAction(): Action {
