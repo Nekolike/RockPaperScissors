@@ -4,7 +4,7 @@ plugins {
     kotlin("jvm") version "1.8.21"
 }
 
-group = "de.nekolike"
+group = "de.nekolike.rps"
 version = "1.0-SNAPSHOT"
 
 repositories {
