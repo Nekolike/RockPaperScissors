@@ -2,6 +2,7 @@ package de.nekolike.rps
 
 import de.nekolike.rps.game.Player
 import de.nekolike.rps.game.PlayerStatisticsUpdater.addDrawForPlayer
+import de.nekolike.rps.game.PlayerStatisticsUpdater.addLossForPlayer
 import de.nekolike.rps.game.PlayerStatisticsUpdater.addWinForPlayer
 import de.nekolike.rps.model.Strategy
 import io.kotest.matchers.shouldBe
@@ -47,6 +48,19 @@ class RockPaperScissorsTest {
 
             opponent.wins shouldBe 0
             opponent.draws shouldBe 1
+            opponent.losses shouldBe 0
+        }
+
+        @Test
+        fun `add loss to player`() {
+            addLossForPlayer(player, opponent)
+
+            player.wins shouldBe 0
+            player.draws shouldBe 0
+            player.losses shouldBe 1
+
+            opponent.wins shouldBe 1
+            opponent.draws shouldBe 0
             opponent.losses shouldBe 0
         }
     }
