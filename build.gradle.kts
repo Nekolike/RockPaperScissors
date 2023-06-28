@@ -2,6 +2,7 @@ import org.jetbrains.kotlin.gradle.tasks.KotlinCompile
 
 plugins {
     kotlin("jvm") version "1.8.21"
+    id("io.kotest.multiplatform") version "5.6.0"
 }
 
 group = "de.nekolike.rps"
@@ -13,6 +14,7 @@ repositories {
 
 dependencies {
     testImplementation(kotlin("test"))
+    testImplementation("io.kotest:kotest-runner-junit5:5.6.0")
 }
 
 tasks.test {
