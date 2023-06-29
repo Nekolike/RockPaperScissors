@@ -6,4 +6,4 @@ Current setup lets the players use the following actions:
 - Player two (called opponent) only uses rock.
 
 You can build the application by running `./gradlew jar`\
-You can then execute the jar by running `java -jar .\build\libs\demo-0.0.1-SNAPSHOT-standalone.jar`
+You can then execute the jar by running `java -jar .\build\libs\RockPaperScissors-1.0-SNAPSHOT.jar`
