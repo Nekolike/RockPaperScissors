@@ -1,5 +1,3 @@
-package de.nekolike.rps
-
 import de.nekolike.rps.model.Strategy
 import de.nekolike.rps.game.Player
 
