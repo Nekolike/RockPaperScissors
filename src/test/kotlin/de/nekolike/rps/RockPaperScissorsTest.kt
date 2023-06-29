@@ -11,12 +11,9 @@ import de.nekolike.rps.mock.PlayerMockHelper.opponentUsesScissors
 import de.nekolike.rps.mock.PlayerMockHelper.playerUsesPaper
 import de.nekolike.rps.mock.PlayerMockHelper.playerUsesRock
 import de.nekolike.rps.mock.PlayerMockHelper.playerUsesScissors
-import de.nekolike.rps.model.Action
 import de.nekolike.rps.model.Strategy
 import io.kotest.matchers.shouldBe
-import io.mockk.every
 import io.mockk.mockk
-import io.mockk.spyk
 import io.mockk.verify
 import org.junit.jupiter.api.BeforeEach
 import org.junit.jupiter.api.Nested
