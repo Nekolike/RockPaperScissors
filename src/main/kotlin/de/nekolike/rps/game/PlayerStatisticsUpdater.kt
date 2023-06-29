@@ -2,17 +2,17 @@ package de.nekolike.rps.game
 
 object PlayerStatisticsUpdater {
     fun addWinForPlayer(player: Player, opponent: Player) {
-        player.wins++
-        opponent.losses++
+        player.addWin()
+        opponent.addLoss()
     }
 
     fun addDrawForPlayer(player: Player, opponent: Player) {
-        player.draws++
-        opponent.draws++
+        player.addDraw()
+        opponent.addDraw()
     }
 
     fun addLossForPlayer(player: Player, opponent: Player) {
-        player.losses++
-        opponent.wins++
+        player.addLoss()
+        opponent.addWin()
     }
 }

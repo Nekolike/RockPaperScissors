@@ -6,8 +6,11 @@ import de.nekolike.rps.model.Strategy
 
 class Player(val strategy: Strategy) {
     var wins = 0
+        private set
     var losses = 0
+        private set
     var draws = 0
+        private set
     var action = chooseAction()
         private set
 
@@ -30,4 +33,8 @@ class Player(val strategy: Strategy) {
     private fun chooseRockAction() : Action {
         return Action.Rock
     }
+
+    fun addWin() = wins++
+    fun addLoss() = losses++
+    fun addDraw() = draws++
 }
